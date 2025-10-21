@@ -5,7 +5,7 @@ import { FaTelegram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="max-w-7xl mx-auto mt-10 px-5 py-10 text-gray-700">
+    <footer className="container mx-auto mt-10 px-5 py-10 text-gray-700">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row md:justify-between gap-10 border-b border-gray-200 pb-8">
         {/* Left side: Logo + description + icons */}

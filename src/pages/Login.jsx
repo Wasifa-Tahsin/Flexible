@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../assets/logo.png'
 import Button from "../components/ui/Button";
+import { NavLink } from "react-router";
 const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -40,7 +41,7 @@ const Login = () => {
           <p>Remember me</p>
           </div>
           <div>
-            <a className="underline text-purple-500" href="">Forget Password?</a>
+            <NavLink to='/forgotPassword' className="underline text-purple-500">  Forget Password?</NavLink>
           </div>
          </div>
 
@@ -52,9 +53,9 @@ const Login = () => {
 
         <p className="text-sm text-center text-gray-500 mt-4">
           Don’t have an account?{" "}
-          <a href="#" className="text-blue-500 hover:underline">
+          <NavLink to='/signUp' className="text-blue-500 hover:underline">
             Sign up
-          </a>
+         </NavLink>
           
         </p>
       </div>

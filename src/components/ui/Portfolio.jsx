@@ -1,10 +1,13 @@
 import React from "react";
 import portfolios from "../../data/portfolios";
 import PortfolioCard from "../PortfolioCard";
+import Tabs from "../Tabs";
 
 const Portfolio = () => {
   return (
-    <section className=" w-7xl mx-auto  mt-10 space-y-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <main>
+    <Tabs></Tabs>
+      <section className=" w-7xl mx-auto  mt-10 space-y-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
      
       {portfolios.map((portfolio) => (
@@ -19,6 +22,7 @@ const Portfolio = () => {
         ></PortfolioCard>
       ))}
     </section>
+  </main>
   );
 };
 
